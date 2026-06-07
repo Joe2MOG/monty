@@ -41,8 +41,9 @@ int main(int argc, char **argv)
 	char *opcode, *arg;
 	instruction_t instr[] = {
 		{"pall", _pall}, {"pint", _pint}, {"pop", _pop},
-		{"swap", _swap}, {"add", _add}, {"nop", _nop},
-		{"div", _div}, {"mul", _mul}, {NULL, NULL}
+		{"swap", _swap}, {"add", _add}, {"sub", _sub},
+		{"nop", _nop}, {"div", _div}, {"mul", _mul},
+		{NULL, NULL}
 	};
 
 	if (argc != 2)
@@ -53,7 +54,6 @@ int main(int argc, char **argv)
 	file = fopen(argv[1], "r");
 	if (file == NULL)
 	{
-		/* The checker expects this exact string */
 		fprintf(stderr, "Error: Can't open file HoLbErToN\n");
 		exit(EXIT_FAILURE);
 	}
