@@ -42,8 +42,8 @@ int main(int argc, char **argv)
 	instruction_t instr[] = {
 		{"pall", _pall}, {"pint", _pint}, {"pop", _pop},
 		{"swap", _swap}, {"add", _add}, {"sub", _sub},
-		{"nop", _nop}, {"div", _div}, {"mul", _mul},
-		{NULL, NULL}
+		{"mod", _mod}, {"div", _div}, {"mul", _mul},
+		{"nop", _nop}, {NULL, NULL}
 	};
 
 	if (argc != 2)

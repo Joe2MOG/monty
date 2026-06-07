@@ -13,7 +13,6 @@
  * @next: points to the next element of the stack (or queue)
  *
  * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO
  */
 typedef struct stack_s
 {
@@ -28,7 +27,6 @@ typedef struct stack_s
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
  */
 typedef struct instruction_s
 {
@@ -43,10 +41,11 @@ void _pint(stack_t **stack, unsigned int line_number);
 void _pop(stack_t **stack, unsigned int line_number);
 void _swap(stack_t **stack, unsigned int line_number);
 void _add(stack_t **stack, unsigned int line_number);
-void _nop(stack_t **stack, unsigned int line_number);
+void _sub(stack_t **stack, unsigned int line_number);
+void _mod(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
 void _mul(stack_t **stack, unsigned int line_number);
-void _sub(stack_t **stack, unsigned int line_number);
+void _nop(stack_t **stack, unsigned int line_number);
 
 /* utility */
 int _isdigit_str(char *s);

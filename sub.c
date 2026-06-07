@@ -4,9 +4,6 @@
  * _sub - subtracts the top element from the second top element
  * @stack: double pointer to the head of the stack
  * @line_number: current line number
- *
- * Description: The result is stored in the second top element,
- * and the top element is removed.
  */
 void _sub(stack_t **stack, unsigned int line_number)
 {
