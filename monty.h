@@ -51,4 +51,13 @@ void _nop(stack_t **stack, unsigned int line_number);
 int _isdigit_str(char *s);
 void free_stack(stack_t *stack);
 
+/* advanced opcodes */
+void _pchar(stack_t **stack, unsigned int line_number);
+void _pstr(stack_t **stack, unsigned int line_number);
+void _rotl(stack_t **stack, unsigned int line_number);
+void _rotr(stack_t **stack, unsigned int line_number);
+void _stack(stack_t **stack, unsigned int line_number);
+void _queue(stack_t **stack, unsigned int line_number);
+int _is_ascii(int n);
+
 #endif /* MONTY_H */

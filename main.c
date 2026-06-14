@@ -43,7 +43,10 @@ int main(int argc, char **argv)
 		{"pall", _pall}, {"pint", _pint}, {"pop", _pop},
 		{"swap", _swap}, {"add", _add}, {"sub", _sub},
 		{"mod", _mod}, {"div", _div}, {"mul", _mul},
-		{"nop", _nop}, {NULL, NULL}
+		{"nop", _nop}, {"pchar", _pchar}, {"pstr", _pstr},
+		{"rotl", _rotl}, {"rotr", _rotr},
+		{"stack", _stack}, {"queue", _queue},
+		{NULL, NULL}
 	};
 
 	if (argc != 2)
